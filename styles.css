@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.time-select,
+.player-container, 
+.sound-picker {
+    height: 80%;
+    flex: 1;
+}
+
+.time-select {
+    background: rgb(80, 159, 255);
+}
+
+.sound-picker {
+    background: rgb(255, 135, 70);
+}
+
+.player-container {
+    background-image: linear-gradient(to right,rgb(80, 159, 255), rgb(255, 135, 70));
+}
