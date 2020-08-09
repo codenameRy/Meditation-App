@@ -82,10 +82,11 @@ video {
 
 .sound-picker button {
     border: none;
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
+    padding: 20px;
     border-radius: 50%;
-    padding: 30px;
+    
 }
 
 .sound-picker button:nth-child(1) {

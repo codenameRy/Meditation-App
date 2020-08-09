@@ -40,6 +40,21 @@ const app = () => {
         }
     }
     
+    //Circle Animation
+    song.ontimeupdate = () => {
+        let currentTime = song.currentTime;
+        let elapsedTime = fakeDuration - currentTime;
+        let seconds = Math.floor(elapsedTime % 60);
+        let minutes =  Math.floor(elapsedTime / 60);
+
+        //Animate the progress circle
+        let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
+        outline.style.strokeDashoffset = progress;
+
+        //Animate the text
+        timeDisplay.textContent = `${minutes}:${seconds}`
+    }
+
 };
 
 app();
